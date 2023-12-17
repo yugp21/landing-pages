@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Josefin+Sans:wght@100&family=Kanit:wght@700&family=Lilita+One&family=Passion+One:wght@900&family=Poppins:wght@100&family=Roboto:ital,wght@1,100;1,900&family=Rowdies&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('fitness1.jpg');
+        font-family: 'Anton', sans-serif;
+        font-family: 'Archivo Black', sans-serif;
+        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Kanit', sans-serif;
+        font-family: 'Lilita One', sans-serif;
+        font-family: 'Passion One', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Rowdies', sans-serif;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid orange; */
+        border-radius: 2px;
+        left: 40px;
+        top: 20px;
+        position: absolute;
+    }
+
+    .left img {
+        width: 50px;
+        /* filter: invert(200%); */
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .mid {
+        display: block;
+        width: 47%;
+        margin: 20px auto;
+        /* border: 2px solid red; */
+    }
+
+    .right {
+        /* border: 2px solid blue; */
+        display: inline-block;
+        right: 30px;
+        top: 32px;
+        position: absolute;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 30px 15px;
+    }
+
+    .navbar li a:hover,
+    a.active {
+        text-decoration: underline;
+        color: rgb(126, 124, 124);
+    }
+
+    .btn {
+        margin: 0px 10px;
+        background-color: black;
+        color: white;
+        padding: 7px 13px;
+        border: 2px sollid grey;
+        border-radius: 12px;
+        font-size: 9px;
+        cursor: pointer;
+        font-family: 'Anton', sans-serif;
+        font-family: 'Archivo Black', sans-serif;
+        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Kanit', sans-serif;
+        font-family: 'Lilita One', sans-serif;
+        font-family: 'Passion One', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Rowdies', sans-serif;
+    }
+
+    .btn:hover {
+        background-color: rgba(41, 41, 41, 0.546);
+        color: red;
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 67px 34px;
+        padding: 28px 28px;
+        width: 34%;
+        border-radius: 15px;
+        
+    }
+
+    .container h2{
+        text-align: center;
+    }
+
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 5px;
+        border: 2px solid black;
+        margin: 3px auto;
+        font-size: 15px;
+        border-radius: 10px;
+        margin: 5px auto;
+    }
+
+    .container button{
+        display: block;
+        width: 20%;
+        margin: 20px auto;
+    }
+
+</style>
+
+<body>
+    <header>
+        <div class="left">
+            <!-- for the logo -->
+            <img src="logo.png" alt="">
+
+
+        </div>
+        <div class="mid">
+            <!-- for the navbar -->
+
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- for the buttons -->
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Register the best gym in Gujarat.</h2>
+        <form action="nolacation.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
